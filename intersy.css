@@ -40,46 +40,38 @@
 /** Appear  */
 .intersy.appear-from-left {
 	opacity: 0;
-	margin-left: -50px;
-	margin-right: 50px;
+	transform: translateX(-50px);
 }
 .intersy.in-view.appear-from-left {
 	opacity: 1;
-	margin-left: 0;
-	margin-right: 0;
+	transform: translateX(0px);
 }
 
 .intersy.appear-from-right {
 	opacity: 0;
-	margin-left: 50px;
-	margin-right: -50px;
+	transform: translateX(50px);
 }
 .intersy.in-view.appear-from-right {
 	opacity: 1;
-	margin-left: 0;
-	margin-right: 0;
+	transform: translateX(0px);
 }
 
 .intersy.appear-from-bottom {
 	opacity: 0;
-	margin-top: 50px;
-	margin-bottom: -50px;
+	transform: translateY(50px);
 }
 .intersy.in-view.appear-from-bottom {
 	opacity: 1;
-	margin-top: 0;
-	margin-bottom: 0;
+	transform: translateY(0px);
 }
 
 .intersy.appear-from-top {
 	opacity: 0;
-	margin-top: -50px;
-	margin-bottom: 50px;
+	transform: translateY(-50px);
 }
 .intersy.in-view.appear-from-top {
 	opacity: 1;
-	margin-top: 0;
-	margin-bottom: 0;
+	transform: translateY(0px);
 }
 
 .intersy.book-page {
