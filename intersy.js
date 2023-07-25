@@ -58,7 +58,6 @@ window.addEventListener("DOMContentLoaded", () => {
                 if (node.parentElement?.nodeType === Node.ELEMENT_NODE) {
                     
                     node.parentElement.querySelectorAll(".intersy:not(.intersy-initialised)").forEach((el) => {
-                        console.log('added')
                         addIntersectionObserver(el);
                     });
                 } 
