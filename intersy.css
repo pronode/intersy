@@ -75,7 +75,7 @@
 }
 
 .intersy.book-page {
-	transform: perspective(1000px) rotateY(-89deg);
+	transform: perspective(1000px) rotateY(-90deg);
 	transform-origin: 0% 50%;
 }
 .intersy.in-view.book-page {
