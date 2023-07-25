@@ -11,13 +11,9 @@
 
 		<style>
 			body {
-				display: flex;
-				flex-direction: column;
-				align-items: center;
-				justify-content: center;
-				gap: 20px;
 				font-family: system-ui, sans-serif;
 				padding: 10px;
+				word-break: break-all;
 			}
 
 			.box {
@@ -25,6 +21,7 @@
 				align-items: center;
 				justify-content: center;
 				width: 500px;
+				max-width: 100%;
 				height: 300px;
 				background-color: lavender;
 				font-size: xx-large;
@@ -42,12 +39,27 @@
 			b {
 				font-family: "Consolas", Courier, monospace;
 			}
+
+			section {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+			}
+
+			footer {
+				padding: 20px;
+				text-align: center;
+			}
+
+			.boxes {
+				gap: 20px;
+			}
 		</style>
 	</head>
 	<body>
-		<h1 class="intersy fade-in">Intersy.js</h1>
-
 		<section class="intersy fade-in delay-500">
+			<h1 class="intersy">Intersy.js</h1>
 			<p>A simple, lightweight library of CSS effects that are triggered when element enters the viewport as the user scrolls the page.</p>
 			<p>Intersy useses <b>Intersection</b> and <b>Mutation Observers</b>.</p>
 			<p>
@@ -100,8 +112,8 @@
 			</ul>
 		</section>
 
-		<section>
-			<h2>Classes</h2>
+		<section class="boxes">
+			<h2>Effects (classes):</h2>
 			<div class="box intersy fade-in">fade-in</div>
 			<div class="box intersy fade-in slow">fade-in slow</div>
 			<div class="box intersy fade-in slow delay-250">fade-in slow delay-250</div>
