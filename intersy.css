@@ -1,0 +1,243 @@
+.intersy {
+	transition: all 0.5s ease-in-out;
+}
+
+/** Transition speed modifiers */
+.intersy.fast {
+	transition: all 0.25s ease-in-out;
+	animation-duration: 0.25s !important;
+}
+.intersy.slow {
+	transition: all 0.75s ease-in-out;
+	animation-duration: 0.25s !important;
+}
+
+/** Transition delay modifiers */
+.intersy.delay-100 {
+	transition-delay: 0.1s;
+}
+.intersy.delay-250 {
+	transition-delay: 0.25s;
+}
+.intersy.delay-500 {
+	transition-delay: 0.5s;
+}
+.intersy.delay-750 {
+	transition-delay: 0.75s;
+}
+.intersy.delay-1000 {
+	transition-delay: 1s;
+}
+
+/** Fade */
+.intersy.fade-in {
+	opacity: 0;
+}
+.intersy.in-view.fade-in {
+	opacity: 1;
+}
+
+/** Appear  */
+.intersy.appear-from-left {
+	opacity: 0;
+	margin-left: -50px;
+	margin-right: 50px;
+}
+.intersy.in-view.appear-from-left {
+	opacity: 1;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.intersy.appear-from-right {
+	opacity: 0;
+	margin-left: 50px;
+	margin-right: -50px;
+}
+.intersy.in-view.appear-from-right {
+	opacity: 1;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.intersy.appear-from-bottom {
+	opacity: 0;
+	margin-top: 50px;
+	margin-bottom: -50px;
+}
+.intersy.in-view.appear-from-bottom {
+	opacity: 1;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.intersy.appear-from-top {
+	opacity: 0;
+	margin-top: -50px;
+	margin-bottom: 50px;
+}
+.intersy.in-view.appear-from-top {
+	opacity: 1;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.intersy.book-page {
+	transform: perspective(1000px) rotateY(-89deg);
+	transform-origin: 0% 50%;
+}
+.intersy.in-view.book-page {
+	transform: rotateY(0deg);
+}
+
+.intersy.stretch-left {
+	transform: rotateY(-89deg);
+	transform-origin: 0 50%;
+}
+.intersy.in-view.stretch-left {
+	transform: rotateY(0deg);
+}
+
+.intersy.stretch-right {
+	transform: rotateY(-90deg);
+	transform-origin: 100% 50%;
+}
+.intersy.in-view.stretch-right {
+	transform: rotateY(0deg);
+}
+
+.intersy.stretch-top {
+	transform: rotateX(-89deg);
+	transform-origin: 50% 0%;
+}
+.intersy.in-view.stretch-top {
+	transform: rotateY(0deg);
+}
+
+.intersy.stretch-bottom {
+	transform: rotateX(-90deg);
+	transform-origin: 50% 100%;
+}
+.intersy.in-view.stretch-bottom {
+	transform: rotateY(0deg);
+}
+
+.intersy.rotate-y {
+	transform: perspective(1000px) rotateY(-90deg);
+}
+.intersy.in-view.rotate-y {
+	transform: rotateY(0deg);
+}
+
+.intersy.rotate-x {
+	transform: perspective(1000px) rotateX(-90deg);
+}
+.intersy.in-view.rotate-x {
+	transform: rotateX(0deg);
+}
+
+.intersy.grow {
+	transform: scale(0.75);
+}
+.intersy.in-view.grow {
+	transform: scale(1);
+}
+
+.intersy.bounce.in-view {
+	animation: bounce 0.5s ease-in-out;
+}
+
+@keyframes bounce {
+	0% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(-50px);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+
+.intersy.pulse.in-view {
+	animation: pulse 0.5s ease-in-out;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.1);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+.intersy.slide-left-then-grow.in-view {
+	animation: slide-left-then-grow 0.5s ease-in-out;
+}
+
+@keyframes slide-left-then-grow {
+	0% {
+		transform: translateX(-100px) scale(0.8);
+	}
+	50% {
+		transform: translateX(0) scale(0.8);
+	}
+	100% {
+		transform: translateX(0) scale(1);
+	}
+}
+
+.intersy.slide-right-then-grow.in-view {
+	animation: slide-right-then-grow 0.5s ease-in-out;
+}
+
+@keyframes slide-right-then-grow {
+	0% {
+		transform: translateX(100px) scale(0.8);
+	}
+	50% {
+		transform: translateX(0) scale(0.8);
+	}
+	100% {
+		transform: translateX(0) scale(1);
+	}
+}
+
+.intersy.slide-from-left {
+	transform: translateX(-100px);
+}
+.intersy.slide-from-left.in-view {
+	transform: translateX(0%);
+}
+
+.intersy.slide-from-right {
+	transform: translateX(100px);
+}
+.intersy.slide-from-right.in-view {
+	transform: translateX(0%);
+}
+
+.intersy.slide-from-top {
+	transform: translateY(-100px);
+}
+.intersy.slide-from-top.in-view {
+	transform: translateY(0%);
+}
+
+.intersy.slide-from-bottom {
+	transform: translateY(100px);
+}
+.intersy.slide-from-bottom.in-view {
+	transform: translateY(0%);
+}
+
+.intersy.shrink {
+	transform: scale(1.1);
+}
+.intersy.shrink.in-view {
+	transform: scale(1);
+}
