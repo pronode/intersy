@@ -3,7 +3,7 @@
 A simple, lightweight library of CSS effects that are triggered when element enters the viewport as the user scrolls the page.
 Intersy works well with "reactive" frameworks where the content is loaded dynamically (Vue, React, LiveWire etc.).
 
-##[See in action!](https://pronode.github.io/intersy/)
+[See in action!](https://pronode.github.io/intersy/)
 
 ## Usage
 
@@ -49,3 +49,4 @@ To add your own effects, simply create a CSS classes keeping following conventio
 ```
 
 You can combine Intersy classes to mix effects. Enjoy!
+[See in action!](https://pronode.github.io/intersy/)
