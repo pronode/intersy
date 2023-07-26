@@ -65,14 +65,12 @@
 			<h1 class="intersy">Intersy.js</h1>
 			<div>
 				<p>A simple, lightweight library of CSS effects that are triggered when element enters the viewport as the user scrolls the page.</p>
-				<p>Intersy useses <b>Intersection</b> and <b>Mutation Observers</b>.</p>
 				<p>
-					It
-					<u>works well with "reactive" frameworks where the content is loaded dynamically</u> (Vue, React, LiveWire etc.).
+					Intersy useses <b>Intersection</b> and <b>Mutation Observers</b>.
+					<u>It automatically adds <b>"in-view"</b> class to each element currently present in viewport.</u>
 				</p>
-				<p>
-					<a href="https://github.com/pronode/intersy">GitHub </a>
-				</p>
+				<p>It works well with "reactive" frameworks where the content is loaded dynamically (Vue, React, LiveWire etc.).</p>
+				<p>See project on <a href="https://github.com/pronode/intersy">GitHub</a>.</p>
 			</div>
 		</section>
 
@@ -103,13 +101,13 @@
 				<li>
 					To add your own effects, simply keep following convention:
 					<code>
-						.intersy.my-custom-effect { /* when element is out of view */
+						.my-custom-effect { /* when element is out of view */
 						<br />
 						&nbsp;&nbsp;&nbsp;&nbsp;opacity: 0;
 						<br />}
 						<br />
 						<br />
-						.intersy.my-custom-effect.in-view { /* when element is in view */
+						.my-custom-effect.in-view { /* when element is in view */
 						<br />
 						&nbsp;&nbsp;&nbsp;&nbsp;opacity: 1; &#x9;&#x9;&#x9;&#x9;
 						<br />
