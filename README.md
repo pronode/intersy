@@ -41,11 +41,11 @@ It automatically adds `"in-view"` class to each element with `"intersy"` class c
 To add your own effects, simply create a CSS classes keeping following convention:
 
 ```
-.intersy.my-custom-effect { /* when element is out of view */
+.my-custom-effect { /* when element is out of view */
     opacity: 0;
 }
 
-.intersy.my-custom-effect.in-view { /* when element is in view */
+.my-custom-effect.in-view { /* when element is in view */
     opacity: 1;
 }
 ```
