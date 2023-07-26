@@ -3,6 +3,8 @@
 A simple, lightweight library of CSS effects that are triggered when element enters the viewport as the user scrolls the page.
 Intersy works well with "reactive" frameworks where the content is loaded dynamically (Vue, React, LiveWire etc.).
 
+It automatically adds `"in-view"` class to each element with `"intersy"` class currently present in viewport.
+
 [See in action!](https://pronode.github.io/intersy/)
 
 ## Usage
