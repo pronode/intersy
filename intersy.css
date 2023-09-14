@@ -233,3 +233,24 @@
 .intersy.shrink.in-view {
 	transform: scale(1);
 }
+
+.intersy.slide-down-effect {
+	position: relative;
+	overflow: hidden;
+}
+
+.intersy.slide-down-effect::before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: white;
+	z-index: 2;
+	transition: all 1s ease;
+}
+
+.intersy.slide-down-effect.in-view::before {
+	height: 0%;
+}
