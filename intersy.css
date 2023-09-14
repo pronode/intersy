@@ -234,12 +234,12 @@
 	transform: scale(1);
 }
 
-.intersy.slide-down-effect {
+.intersy.slide-down-overlay {
 	position: relative;
 	overflow: hidden;
 }
 
-.intersy.slide-down-effect::before {
+.intersy.slide-down-overlay::before {
 	content: "";
 	position: absolute;
 	bottom: 0;
@@ -251,6 +251,6 @@
 	transition: all 1s ease;
 }
 
-.intersy.slide-down-effect.in-view::before {
+.intersy.slide-down-overlay.in-view::before {
 	height: 0%;
 }
