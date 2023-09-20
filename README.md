@@ -24,7 +24,8 @@ It automatically adds `"in-view"` class to each element with `"intersy"` class c
 3. Add one ore more Intersy classes to the element you want to animate:
 
 ```
-<div class="intersy fade-in"> ... </div>
+<!-- We want a div to appear when 25% of it enters the viewport -->
+<div class="intersy fade-in"> yey! </div>
 ```
 
 4. That's it!
@@ -34,7 +35,7 @@ It automatically adds `"in-view"` class to each element with `"intersy"` class c
 -   You can add `"fast"` and `"slow"` classes to control the speed of transition: 250 / 500 (default) / 750 ms.
 -   Add `"once"` class to prevent repeats.
 -   Use `"delay-[ms]"` (250/500/750/1000) class to delay transition by X ms.
--   Use `"threshold-[percent]"` (10/50/75/100) class to define what part of element should be in viewport to trigger the effect. 25% is default.
+-   Use `"threshold-[percent]"` (0/10/50/75/100) class to define what part of element should be in viewport to trigger the effect. 25% is default and threshold-0 value is equal to 0.001% of element.
 
 ## Adding your own effects
 

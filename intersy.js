@@ -5,7 +5,9 @@ window.addEventListener("DOMContentLoaded", () => {
         let threshold = 0.25;
 
         // Class-defined threshold:
-        if (target.classList.contains("threshold-10")) {
+        if (target.classList.contains("threshold-0")) {
+            threshold = 0.001;
+        } else if (target.classList.contains("threshold-10")) {
             threshold = 0.1;
         } else if (target.classList.contains("threshold-50")) {
             threshold = 0.5;
