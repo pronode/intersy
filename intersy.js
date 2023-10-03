@@ -42,13 +42,13 @@ window.addEventListener("DOMContentLoaded", () => {
     // Setup DOMChanged observer:
     const domChangedObserver = new MutationObserver(list => {
         const evt = new CustomEvent('DOMChanged', { detail: list });
-        document.dispatchEvent(evt)
+        window.dispatchEvent(evt)
     });
 
     domChangedObserver.observe(document, { childList: true, subtree: true });
 
     // Setup DOMChanged listener:
-    document.addEventListener('DOMChanged', (e) => {
+    window.addEventListener('DOMChanged', (e) => {
 
         // Traverse through e.detail array containing MutationRecord objects:
         e.detail.forEach((mutation) => {
